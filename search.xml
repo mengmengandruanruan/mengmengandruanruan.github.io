@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>项目实践1</title>
+      <link href="/2018/11/18/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B51/"/>
+      <url>/2018/11/18/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B51/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 项目实践 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>spring的优缺点</title>
+      <link href="/2018/11/18/spring%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/"/>
+      <url>/2018/11/18/spring%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</url>
+      
+        <content type="html"><![CDATA[<h1 id="使用Spring的好处"><a href="#使用Spring的好处" class="headerlink" title="使用Spring的好处"></a>使用Spring的好处</h1><h2 id="轻量级框架"><a href="#轻量级框架" class="headerlink" title="轻量级框架"></a>轻量级框架</h2><p>Spring是轻量级框架,基本的版本大约2M</p><h2 id="控制反转"><a href="#控制反转" class="headerlink" title="控制反转"></a>控制反转</h2><p>Spring通过控制反转实现松散耦合,对象们给它们的依赖,而不是创建或者查找依赖的对象们 。<br>方便解耦,简化开发</p><h2 id="面相切面的编程-AOP"><a href="#面相切面的编程-AOP" class="headerlink" title="面相切面的编程 AOP"></a>面相切面的编程 AOP</h2><p>Spring支持面相切面的编程,并且把应用业务逻辑和系统分开</p><h2 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h2><p>Spring 包含并管理应用中对象的生命周期和配置</p><h2 id="MVC框架"><a href="#MVC框架" class="headerlink" title="MVC框架"></a>MVC框架</h2><p>Spring的WEB框架是个精心设计的框架,是WEB框架的一个很好的替代品</p><h2 id="事务管理"><a href="#事务管理" class="headerlink" title="事务管理"></a>事务管理</h2><p>Spring 提供一个持续的事务管理接口,可以扩展到上至本地事务下至全局事务(JTA)</p><p>Spring 提供方便的API把具体技术的相关异常(比如由JDBC Hibernate or JDO 抛出的) 转化为一致的 unchecked异常</p><h1 id="关于Spring框架的缺点"><a href="#关于Spring框架的缺点" class="headerlink" title="关于Spring框架的缺点"></a>关于Spring框架的缺点</h1><h2 id="明明一个很轻量级的框架，却给人感觉大而全，这就是它的缺点。"><a href="#明明一个很轻量级的框架，却给人感觉大而全，这就是它的缺点。" class="headerlink" title="明明一个很轻量级的框架，却给人感觉大而全，这就是它的缺点。"></a>明明一个很轻量级的框架，却给人感觉大而全，这就是它的缺点。</h2><p>Spring的核心概念是 IOP（控制反转） 和AOC(面向切面) 他的服务对象就是那些bean，spring完全可以理解为存放那些bean的容器。</p><h2 id="关于IOC（控制反转）"><a href="#关于IOC（控制反转）" class="headerlink" title="关于IOC（控制反转）"></a>关于IOC（控制反转）</h2><p>IOC的目的在于让开发者关注的重心在于如何使用那些bean，不管bean的来源是哪儿。@Autowired就出现，我们只需要关心如何使用。<br>但是为了弄好这个，Spring弄了多少东西，BeanDefinition，BeanFactory，FactoryBean，然后Bean的生命周期接口好几个，Aware接口又好几个，等等。</p><h2 id="关于AOP（面向切面）"><a href="#关于AOP（面向切面）" class="headerlink" title="关于AOP（面向切面）"></a>关于AOP（面向切面）</h2><p>AOP在spring中的主要目的是以一种非浸入的方式对bean进行扩展。为了对bean支持，Spring弄了一套AspctJ的子集，既有Java原生的接口代理，又有更加灵活的Cglib，光是AOP的概念就不少，更不要说实现的原理。</p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><h2 id="Spring就是围绕着bean展开的"><a href="#Spring就是围绕着bean展开的" class="headerlink" title="Spring就是围绕着bean展开的"></a>Spring就是围绕着bean展开的</h2><p>Spring主要就是作为bean的容器，在这个基础上，有了SpringMVC，有了JPA，有了Cloud，有了Data Flow，以及其他模块。</p><h2 id="不全是bean"><a href="#不全是bean" class="headerlink" title="不全是bean"></a>不全是bean</h2><h3 id="JPA"><a href="#JPA" class="headerlink" title="JPA"></a>JPA</h3><p>核心是Hibernate</p><h3 id="Cloud"><a href="#Cloud" class="headerlink" title="Cloud"></a>Cloud</h3><p>核心是另外一套微服务框架。</p><h2 id="调用繁复"><a href="#调用繁复" class="headerlink" title="调用繁复"></a>调用繁复</h2><p>###<br>随便找个地方打断点，调用就不下二十来层，在现在这种强调轻量化服务的大环境下，是较大的弊端。</p><p>###<br>Java这门语言动态性本来就是它的弱项，Spring能把Java包装的像个动态化的语言已经蛮拼了。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> spring </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2018/11/17/hello-world/"/>
+      <url>/2018/11/17/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+  
+  
+</search>
