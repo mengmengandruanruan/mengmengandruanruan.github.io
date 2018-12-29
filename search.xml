@@ -3,11 +3,62 @@
   
     
     <entry>
+      <title>关于svn</title>
+      <link href="/2018/12/12/%E5%85%B3%E4%BA%8Esvn/"/>
+      <url>/2018/12/12/%E5%85%B3%E4%BA%8Esvn/</url>
+      
+        <content type="html"><![CDATA[<h1 id="svn-subversion"><a href="#svn-subversion" class="headerlink" title="svn(subversion)"></a>svn(subversion)</h1><p>它是一个自由/开源的版本控制系统，一组文件存放在中心版本库，记录每一次文件和目录的修改，Subversion允许把数据恢复到早期版本，或是检查数据修改的历史，Subversion可以通过网络访问它的版本库，从而使用户在不同的电脑上进行操作。</p><h2 id="svn的安装。"><a href="#svn的安装。" class="headerlink" title="svn的安装。"></a>svn的安装。</h2><p>先安装svn服务端。然后安装svn客户端。服务端在widows下强烈推荐使用VisualSVN Server 他有一个较为便捷的图形界面。还可以加装汉化包。客户端的话最流行的是小乌龟TortoiseSVN。</p><h2 id="svn的使用"><a href="#svn的使用" class="headerlink" title="svn的使用"></a>svn的使用</h2><h3 id="1-安装小乌龟"><a href="#1-安装小乌龟" class="headerlink" title="1.安装小乌龟"></a>1.安装小乌龟</h3><h3 id="2-导出项目"><a href="#2-导出项目" class="headerlink" title="2.导出项目"></a>2.导出项目</h3><h4 id="1-idea导出项目"><a href="#1-idea导出项目" class="headerlink" title="(1)idea导出项目"></a>(1)idea导出项目</h4><p><img src="/md_images/checkoutproject1.png" alt=""></p><h4 id="2-选择要导出的svn库"><a href="#2-选择要导出的svn库" class="headerlink" title="(2)选择要导出的svn库"></a>(2)选择要导出的svn库</h4><p><img src="/md_images/selectsvn.png" alt=""><br>库默认是没有的，所以要先导入，点击”+”号。如下图：<br><img src="/md_images/selectsvn1.png" alt=""></p><p>然后在弹出的窗体中输入url地址<br><img src="/md_images/selectsvn2.png" alt=""><br>然后点击checkout按钮可以直接导出项目<br><img src="/md_images/selectsvn3.png" alt=""></p><h3 id="3版本管理"><a href="#3版本管理" class="headerlink" title="3版本管理"></a>3版本管理</h3><h4 id="1-查看历史版本"><a href="#1-查看历史版本" class="headerlink" title="(1)查看历史版本"></a>(1)查看历史版本</h4><p><img src="/md_images/selectversion.png" alt=""></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 版本控制工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>jquery</title>
+      <link href="/2018/12/11/jquery/"/>
+      <url>/2018/12/11/jquery/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Jquery"><a href="#Jquery" class="headerlink" title="Jquery"></a>Jquery</h1><p>Jquery 是js代码库。他的设计宗旨是”write less do more”,及倡导写更少的代码，做更多的事情。它封装常用的js功能代码。提供一种简单的js设计模式。优化html文档的操作。事件处理。动画处理和ajax交互jquery的核心特征可以总结为具有独特的链式语法和短小清晰的多功能接口。具有高效灵活的css选择器。并且可以对css选择器进行扩展。拥有便捷的插件扩展机制和丰富的插件。</p><h2 id="1。选择器"><a href="#1。选择器" class="headerlink" title="1。选择器"></a>1。选择器</h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> jquery </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>关于spring的ioc</title>
+      <link href="/2018/12/01/%E5%85%B3%E4%BA%8Espring%E7%9A%84ioc/"/>
+      <url>/2018/12/01/%E5%85%B3%E4%BA%8Espring%E7%9A%84ioc/</url>
+      
+        <content type="html"><![CDATA[<h1 id="spring-ioc"><a href="#spring-ioc" class="headerlink" title="spring ioc"></a>spring ioc</h1><h2 id="spring-ioc是什么。"><a href="#spring-ioc是什么。" class="headerlink" title="spring ioc是什么。"></a>spring ioc是什么。</h2><pre><code>Ioc—Inversion of Control，即“控制反转”，不是一种技术是一种设计思想。在Java开发中。ioc意味着将设计好的程序交给容器控制。而不是在对象内部直接控制。</code></pre><h2 id="如何理解好ioc"><a href="#如何理解好ioc" class="headerlink" title="如何理解好ioc"></a>如何理解好ioc</h2><pre><code>理解好ioc的关键在于：谁控制谁，控制什么，为什么是反转，那些方面反转了。</code></pre><h3 id="谁控制谁，控制什么"><a href="#谁控制谁，控制什么" class="headerlink" title="谁控制谁，控制什么"></a>谁控制谁，控制什么</h3><pre><code>传统javase设计，我们直接在对象内部通过new进行创建对象。是程序主动去创建依赖对象；而ioc是专门有一个容器来创建对象。既用ioc容器来控制对象的创建。提问1：谁控制谁？ioc容器控制了对象。提问2：控制了什么？主要控制了外部资源的获取。</code></pre><h3 id="为何是反转，那些方面反转了。"><a href="#为何是反转，那些方面反转了。" class="headerlink" title="为何是反转，那些方面反转了。"></a>为何是反转，那些方面反转了。</h3><pre><code>有反转就有正转。传统应用程序是由我们自己在对象中主动，控制去直接依赖对象。也就是正转；而反转则是由容器来帮忙创建及注入依赖对象；提问1：为什么是反转？因为由容器帮我们注入依赖对象，对象只是被动接受依赖对象。所以是反转。提问2：那些是反转？依赖对象的获取被反转了。</code></pre><h1 id="ioc能做什么？"><a href="#ioc能做什么？" class="headerlink" title="ioc能做什么？"></a>ioc能做什么？</h1><pre><code>ioc不是一种技术，是一种编程思想，一种重要的面向对象编程的法则。它能轻松指导我们设计出松耦合。更优良的程序。</code></pre><h1 id="ioc和DI"><a href="#ioc和DI" class="headerlink" title="ioc和DI"></a>ioc和DI</h1><pre><code>DI—Dependency Injection，即“依赖注入”：组件之间的依赖关系由容器动态的将某个依赖关系注入到组件之中。依赖注入的目的并非为软件系统带来更多功能，而是为了提升组件重用的频率，并为系统搭建一个灵活、可扩展的平台。通过依赖注入机制，我们只需要通过简单的配置，而无需任何代码就可指定目标需要的资源，完成自身的业务逻辑，而不需要关心具体的资源来自何处，由谁实现。    </code></pre><p><em>谁依赖于谁？<br>应用程序依赖于ioc容器。</em>为什么要依赖？<br>应用程序需要ioc容器来提供对象需要的外部资源<br><em>谁注入谁？<br>ioc容器注入应用程序某个对象，应用程序依赖的对象。</em>注入了什么？<br>注入某个对象所需要的外部资源。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> spring </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>项目实践1</title>
       <link href="/2018/11/18/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B51/"/>
       <url>/2018/11/18/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B51/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="我的分享平台项目（vue-springboot-mybatisplus）"><a href="#我的分享平台项目（vue-springboot-mybatisplus）" class="headerlink" title="我的分享平台项目（vue+springboot+mybatisplus）"></a>我的分享平台项目（vue+springboot+mybatisplus）</h1><h2 id="项目工具"><a href="#项目工具" class="headerlink" title="项目工具"></a>项目工具</h2><p>node.js,maven </p>]]></content>
       
       
       
