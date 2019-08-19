@@ -3,6 +3,17 @@
   
     
     <entry>
+      <title>js中的类</title>
+      <link href="/2019/08/13/js%E4%B8%AD%E7%9A%84%E7%B1%BB/"/>
+      <url>/2019/08/13/js%E4%B8%AD%E7%9A%84%E7%B1%BB/</url>
+      
+        <content type="html"><![CDATA[<p>#class<br>js本身不是面向对象的语言，设计之初没有提供对类的支持。在es6中新增加了很多支持类的关键字。如class constructor等等。<br>本质上是封装好的语法糖。<br>真正了解js中的类还得从es5的写法中去学习。</p><h2 id="一-定义类"><a href="#一-定义类" class="headerlink" title="一.定义类"></a>一.定义类</h2><pre><code>function Animal(){        this.name=&apos;&apos;　　　　this.species = &quot;动物&quot;;　　}let a = new Animal()</code></pre><h2 id="二-JS中的prototype、proto与constructor"><a href="#二-JS中的prototype、proto与constructor" class="headerlink" title="二.JS中的prototype、proto与constructor"></a>二.JS中的prototype、<strong>proto</strong>与constructor</h2><h3 id="1-隐式原型-proto"><a href="#1-隐式原型-proto" class="headerlink" title="1.隐式原型(__proto__)"></a>1.隐式原型(__proto__)</h3><p><img src="/md_images/proto.png" alt=""><br>__proto <strong>属性的作用是当访问一个对象的属性时，如果该对象内部不存在这个属性，那么就会去它的__proto </strong>所指向的哪个对象里找。如果父对象内部不存在。则继续在父对象的父对象里面查询。直到原型链顶端null。</p><h4 id="①proto和constructor属性是对象所独有的。"><a href="#①proto和constructor属性是对象所独有的。" class="headerlink" title="①proto和constructor属性是对象所独有的。"></a>①<strong>proto</strong>和constructor属性是对象所独有的。</h4><h4 id="②-prototype属性是函数所独有的，但是由于js中函数也是对象，所以函数有proto-constructor和prototype三个属性"><a href="#②-prototype属性是函数所独有的，但是由于js中函数也是对象，所以函数有proto-constructor和prototype三个属性" class="headerlink" title="② prototype属性是函数所独有的，但是由于js中函数也是对象，所以函数有proto,constructor和prototype三个属性"></a>② prototype属性是函数所独有的，但是由于js中函数也是对象，所以函数有<strong>proto</strong>,constructor和prototype三个属性</h4><h3 id="2-prototype属性"><a href="#2-prototype属性" class="headerlink" title="2.prototype属性"></a>2.prototype属性</h3><p><img src="/md_images/prototype.png" alt=""><br>它的含义是函数的原型对象，也就是这个函数（其实所有函数都可以作为构造函数）所创建的实例的原型对象。它的作用就是包含可以由特定类型的所有实例共享的属性和方法，也就是让该函数所实例化的对象们都可以找到公用的属性和方法（任何函数在创建的时候，其实会默认同时创建该函数的prototype对象）。</p><h4 id="①prototype属性是函数所独有的。"><a href="#①prototype属性是函数所独有的。" class="headerlink" title="①prototype属性是函数所独有的。"></a>①prototype属性是函数所独有的。</h4><h4 id="②它从一个函数指向一个对象。"><a href="#②它从一个函数指向一个对象。" class="headerlink" title="②它从一个函数指向一个对象。"></a>②它从一个函数指向一个对象。</h4><h3 id="3-constructor属性"><a href="#3-constructor属性" class="headerlink" title="3.constructor属性"></a>3.constructor属性</h3><p><img src="/md_images/constructor.png" alt=""><br>每个对象都有构造函数（本身拥有或继承而来，继承而来的要结合<strong>proto</strong>属性查看会更清楚点，如下图所示），从上图中可以看出Function这个对象比较特殊，它的构造函数就是它自己（因为Function可以看成是一个函数，也可以是一个对象），所有函数和对象最终都是由Function构造函数得来，所以constructor属性的终点就是Function这个函数。</p><h4 id="①constructor属性也是对象才拥有的"><a href="#①constructor属性也是对象才拥有的" class="headerlink" title="①constructor属性也是对象才拥有的"></a>①constructor属性也是对象才拥有的</h4><h4 id="②含义就是指向该对象的构造函数"><a href="#②含义就是指向该对象的构造函数" class="headerlink" title="②含义就是指向该对象的构造函数"></a>②含义就是指向该对象的构造函数</h4><h2 id="三-继承（原型模式）"><a href="#三-继承（原型模式）" class="headerlink" title="三.继承（原型模式）"></a>三.继承（原型模式）</h2><p>类的继承分三步；<br>第一步 把子类的原型指向父类；<br>第二步 把子类的原型的构造函数指向子类函数对象；</p><pre><code>function Cat(){    this.eat=function(){        console.log(&apos;I like fish&apos;+this.name)    }}Cat.prototype = new Animal();Cat.prototype.constructor = Cat;let cat = new Cat();    cat.name=&quot;mimi&quot;    cat.eat()    console.log(cat.constructor)</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    <entry>
       <title>vue中axios配置的两种方式</title>
       <link href="/2019/04/29/vue-axios%E9%85%8D%E7%BD%AE%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/"/>
       <url>/2019/04/29/vue-axios%E9%85%8D%E7%BD%AE%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/</url>
@@ -103,7 +114,7 @@
       <link href="/2018/12/11/jquery/"/>
       <url>/2018/12/11/jquery/</url>
       
-        <content type="html"><![CDATA[<h1 id="Jquery"><a href="#Jquery" class="headerlink" title="Jquery"></a>Jquery</h1><p>Jquery 是js代码库。他的设计宗旨是”write less do more”,及倡导写更少的代码，做更多的事情。它封装常用的js功能代码。提供一种简单的js设计模式。优化html文档的操作。事件处理。动画处理和ajax交互jquery的核心特征可以总结为具有独特的链式语法和短小清晰的多功能接口。具有高效灵活的css选择器。并且可以对css选择器进行扩展。拥有便捷的插件扩展机制和丰富的插件。</p><h2 id="1-选择器"><a href="#1-选择器" class="headerlink" title="1.选择器"></a>1.选择器</h2>]]></content>
+        <content type="html"><![CDATA[<h1 id="Jquery"><a href="#Jquery" class="headerlink" title="Jquery"></a>Jquery</h1><p>是js代码库。他的设计宗旨是”write less do more”,及倡导写更少的代码，做更多的事情。它封装常用的js功能代码。提供一种简单的js设计模式。优化html文档的操作。事件处理。动画处理和ajax交互jquery的核心特征可以总结为具有独特的链式语法和短小清晰的多功能接口。具有高效灵活的css选择器。并且可以对css选择器进行扩展。拥有便捷的插件扩展机制和丰富的插件。</p><h2 id="1-选择器"><a href="#1-选择器" class="headerlink" title="1.选择器"></a>1.选择器</h2>]]></content>
       
       
       
